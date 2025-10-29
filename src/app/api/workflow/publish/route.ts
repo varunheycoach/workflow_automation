@@ -19,7 +19,7 @@ export async function POST(request: Request) {
         status: 201,
       }
     );
-  } catch (error: any) {
+  } catch (error) {
     console.log("Error saving workflow: ", error);
     return new NextResponse(
       JSON.stringify({ message: "Error saving workflow" }),
